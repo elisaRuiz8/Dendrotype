@@ -1,0 +1,22 @@
+# Core
+pandas
+numpy<2          # pinned: scvi-tools/numba/llvmlite ABI conflicts with numpy 2.x as of this project
+
+# Single-cell analysis
+scanpy
+anndata
+bbknn
+scvi-tools
+torch             # scvi-tools backend; install a CPU or CUDA build matching your hardware
+celltypist
+
+# Diagnostics (resolution/neighbors sweeps)
+scikit-learn      # adjusted_rand_score
+scipy             # connected_components
+
+# Plotting / UI
+matplotlib
+Pillow
+
+# tkinter ships with most Python installs, but on Linux you may need to install it
+# separately at the OS level, e.g.: sudo apt-get install python3-tk
